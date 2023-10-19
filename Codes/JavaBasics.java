@@ -1,6 +1,14 @@
-class demo {
+class JavaBasics {
     public static void main(String[] args) {
-        greaterNumber(3,2,1); 
+        // greaterNumber(3,2,1); 
+        //Unary Operator
+        int a = 5;
+        int b = ~a;
+        System.out.println(b);
+        
+        // Bitwise Operator
+        int c = a << 1;
+         System.out.println(c);
     }
     
     static void greaterNumber(int a,int b,int c){
@@ -18,4 +26,6 @@ class demo {
     		}
     	}
     }
+    
+    
 }
