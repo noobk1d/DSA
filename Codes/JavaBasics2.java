@@ -4,7 +4,9 @@ class JavaBasics2{
         int []arr = {1,2,1};
         // findMinMax(arr);
         // printFibonacci(5);
-        factorial(5);
+        // factorial(5);
+        int []array = {0,1,1,1,0,0};
+        ZerosAndOnes(array);
     }
     
     static void findMinMax(int arr[]){
@@ -24,7 +26,41 @@ class JavaBasics2{
     	
     }
     static void ZerosAndOnes(int arr[]){
-    	
+        
+        int length = arr.length;
+    	// Approach 1 : O(n^2) Brute Force Checking for Each Element If there is an 
+        // element smaller than the current element
+        // for(int i = 0;i < length; i++)
+        // {
+        //     int ele = arr[i];
+        //     for(int j = i; j<length; j++){
+        //         if(arr[j] < ele){
+        //             int temp = arr[i];
+        //             arr[i] = arr[j];
+        //             arr[j] = temp;
+        //         }
+        //     }
+        // }
+        
+        //Approach 2 : O(2n) Couting Zeros
+        // int count = 0;
+        // for(int i=0; i<length; i++){
+        //     if(arr[i] == 0)
+        //         count++;
+        // }
+        // for(int i=0; i<count; i++){
+        //     arr[i] = 0;
+        // }
+        // for(int i=count; i<length; i++){
+        //     arr[i] = 1;
+        // }
+        
+        //Approach 3 : O(n) Two Pointer
+        
+        
+        for(int i=0;i<length;i++){
+            System.out.print(arr[i]+" ");    
+        }
     }
     
     static void printFibonacci(int a){
