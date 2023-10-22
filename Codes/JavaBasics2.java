@@ -55,13 +55,28 @@ class JavaBasics2{
         //     arr[i] = 1;
         // }
         
-        //Approach 3 : O(n) Two Pointer
+        //Approach 3 : O(n) Two Pointer 
+        //Swapping 1 from left to right 
         
+        int type0 = 0;
+        int type1 = length - 1;
+        while(type0 < type1){
+            if(arr[type0] == 1){
+                int temp = arr[type0];
+                arr[type0] = arr[type1];
+                arr[type1] = temp;
+                type1--;
+            }else{
+                type0++;
+            }
+        }
         
         for(int i=0;i<length;i++){
             System.out.print(arr[i]+" ");    
         }
     }
+    
+    
     
     static void printFibonacci(int a){
     	int t1 =0;
