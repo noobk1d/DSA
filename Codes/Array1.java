@@ -271,7 +271,7 @@ class Array1{
  		for(int i=a.length-2;i>=0;i--){
  			if(a[i] > greatest){
  				greatest = a[i];
- 				System.out.println(greatest);
+ 				// System.out.println(greatest);
  			}
  			ans[i] = greatest;
  		}
