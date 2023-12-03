@@ -27,7 +27,12 @@
       	
       	//Method Overriding
       	Car c = new Audi();
-      	c.run();    
+      	c.run();  
+        
+        //Encapsulation
+        SecretCode code = new SecretCode();
+        code.setData(190);
+        System.out.println(code.getData());   
    }
 }
  class demoConstructor{
@@ -116,5 +121,22 @@
  	}
  }
  
+ //Encapsulation
+ 
+ class SecretCode{
+  private int data = 100;
+  
+  public void setData(int data) {
+    if(data > 100) {
+      this.data = data;
+    } else {
+      System.out.println("You are not allowed");
+    }
+  }
+  
+  public int getData() {
+    return data;
+  }
+ }
  
  //Inner Class
